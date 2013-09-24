@@ -19,7 +19,7 @@ else
 endif
 
 if COMPILE_SERVER
-  MAKE_SERVER = server tools httpserver $(MAKE_CONTROLLER)
+  MAKE_SERVER = server tools httpserver $(MAKE_CONTROLLER) fuse
 endif
 
 SUBDIRS = include lib common app python tests doc \
@@ -27,7 +27,7 @@ SUBDIRS = include lib common app python tests doc \
 
 DIST_SUBDIRS = include lib common app python tests \
 	daemon gui server tools httpserver controller \
-	po data doc
+	po data doc fuse
 
 INTLTOOL = \
 	intltool-extract.in \
